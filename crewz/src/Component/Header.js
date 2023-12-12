@@ -38,12 +38,12 @@ export default function Header() {
         <Row style={{padding : '20px'}}>
             
             <Col xs={2}>
-            <img style={{ width: '100px', borderRadius : '.5rem'}} src={logoImg} alt="로고사진" />
+            <img style={{ width: '150px', borderRadius : '.5rem'}} src={logoImg} alt="로고사진" />
 
             </Col>
 
-            <Col xs={10}>
-                <SearchContainer>
+            <Col style={{ paddingTop:'20px'}} xs={10}>
+                <SearchContainer >
                     <SearchInput type="text" placeholder="검색어를 입력하세요" />
                     <SearchButton onClick={handleSearch}>검색</SearchButton>
                 </SearchContainer>

@@ -1,10 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Badge from 'react-bootstrap/Badge';
 import styled from 'styled-components';
+import "./moimcss.css";
 
 const Textarea = styled.textarea`
   width: 100%;
-  height : 200px;
+  height : 500px;
   font-size : 1rem;
   border:none; 
   outline:none;
@@ -14,65 +15,55 @@ const Textarea = styled.textarea`
 export default function Home() {
     return (
         <div>
-            <Carousel data-bs-theme="dark">
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://picsum.photos/200/100"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+            <div class="img_box">
+                <Carousel class="carousel" data-bs-theme="dark">
+                    <Carousel.Item className='carousel_item'>
+                        <img
+                            className="d-block"
+                            src="https://picsum.photos/700/350"
+                            alt="First slide"
+                        />
+                        
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <img
+                    <Carousel.Item className='carousel_item'>
+                        <img
 
-                        className="d-block w-100"
-                        src="https://picsum.photos/200/100"
-                        alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                            className="d-block"
+                            src="https://picsum.photos/700/350"
+                            alt="Second slide"
+                        />
+                        
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="https://picsum.photos/200/100"
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                        <h5>Third slide label</h5>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-            <br />
-            
-            <snap style={{fontSize:'35px'}}>RooTrip </snap><Badge bg="primary">여행</Badge>
-          
-            
-            
-
-            <h4>여행객들은 여행객끼리 통한다! 여행객들 여기 다 모여라!</h4>
+                    <Carousel.Item className='carousel_item'>
+                        <img
+                            className="d-block"
+                            src="https://picsum.photos/700/350"
+                            alt="Third slide"
+                        />
+                        
+                    </Carousel.Item>
+                </Carousel>
+                <br />
+            </div>
+            <snap style={{ fontSize: '35px' }}>RooTrip </snap><Badge bg="primary">여행</Badge>
+            <h5>여행객들은 여행객끼리 통한다! 여행객들 여기 다 모여라!</h5><br/><br/>
             <Textarea id="content">
-                {`
-                at FlowParserMixin.parseMaybeAssignAllowIn 
-                (C:\\Users\\vtwin\\vs-workspace\\crewz\\node_modules\\@babel\\parser\\lib\\index.js:10567:17)
-                at FlowParserMixin.parseParenAndDistinguishExpression 
-                (C:\\Users\\vtwin\\vs-workspace\\crewz\\node_modules\\@babel\\parser\\lib\\index.js:11499:28)
-                at FlowParserMixin.parseParenAndDistinguishExpression 
-                (C:\\Users\\vtwin\\vs-workspace\\crewz\\node_modules\\@babel\\parser\\lib\\index.js:5799:18)
-                `}
+                {`안녕하세요 이건 테스트 케이스 입니다.안녕하세요 
+이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.
+안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 
+입니다.안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.
+안녕하세요 이건 테스트 케이스 입니다.안녕하세요 
+이건 테스트 케이스 입니다.안녕하세요 
+이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.
+안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.안녕하세요
+이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.
+안녕하세요 이건 테스트 케이스 입니다.안녕하세요 이건 테스트 케이스 입니다.안녕하세요 `}
+                
+           
             </Textarea>
-            <br /><br /><br /><br /><br /><br /><br />
+            
         </div>
 
     );
