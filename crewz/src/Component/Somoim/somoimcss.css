@@ -6,16 +6,19 @@
 	padding: 20px 0;
 }
 
-.img-fluid {
-	height : 250px;
+#Add_btn {
+	position : relative;
+	left : 45%;
+	width : 200px;
+	height :55px; 
+	font-size: 2rem;
+	
 }
-
+.img-fluid {
+	height : 200px;
+}
 .somoim-input{
 	margin-top : 20px;
-}
-
-.somoim_img{
-	height: 250px;
 }
 .mb-5 {
 	margin-bottom: 20px;
