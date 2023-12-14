@@ -4,8 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+#content {
+	min-height: 800px;
+}
 .App {
-  
    font-family: "JalnanGothic";
 }
 .btn-danger{
@@ -13,8 +15,8 @@
 }
 .menubar{
   margin : 5px;
-  width: 200px;
-  height : 35px;
+  width: 19%;
+  height : 45px;
 }
 .App-logo {
   height: 40vmin;

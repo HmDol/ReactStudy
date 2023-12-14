@@ -16,14 +16,13 @@
     background: rgba(220, 20, 60, .1);  /*스크롤바 뒷 배경 색상*/
 }
 .carousel{
-    /* height : 100%; */
     display: flex;
     justify-content: center;
 
 }
 
 .d-block{
-    margin-left : 15rem;
+    margin-left : 26%;
     height :400px;
     width : 600px;
 }
