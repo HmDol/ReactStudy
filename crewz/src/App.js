@@ -8,12 +8,21 @@ import Router from './Router';
 import Header from './Component/Header';
 import Footer from './Component/footer';
 import MoimAdd from './Component/Moim/moimAdd';
+import MainModal from './MainModal';
+
 function App() {
   const [selectedButton, setSelectedButton] = useState('홈');
 
   const setPage = (label) => {
     setSelectedButton(label);
   }
+
+
+
+  const [showMainModal, setShowMainModal] = useState(false);
+
+  const handleMainShow = () => setShowMainModal(true);
+  const handleMainClose = () => setShowMainModal(false);
 
   return (
     <Container className='App'>
@@ -73,6 +82,13 @@ function App() {
         </BrowserRouter>
       </div>
       <MoimAdd/>
+      <div>
+      <Button variant="primary" onClick={handleMainShow}>
+        Open Main Modal
+      </Button>
+
+      <MainModal show={showMainModal} handleClose={handleMainClose} />
+    </div> 
       <div>
         <Footer />
       </div>

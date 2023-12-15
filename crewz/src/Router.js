@@ -7,12 +7,16 @@ import ReviewTest from "./Component/review/ReviewTest";
 import ReviewEditModal from "./Component/review/ReviewEditModal";
 import ReviewAddModal from "./Component/review/ReviewAddModal"
 import AlbemHome from "./Component/Ablem/AlbemHome";
+// import App from "./App";
+// import Moim from "./Moim";
 
 class Router extends Component{
     render(){
         return(
             <Routes>
-                <Route exact path="/moim/home" element={<Home/>}/>
+                {/* <Route exact path="" element={<App/>}></Route> */}
+                {/* <Route path="/moim" element={<Moim/>}></Route> */}
+                <Route path="/moim/home" element={<Home/>}/>
                 <Route path="/somoim/home" element={<SomoimHome/>}/>
                 <Route path="/moim/albem" element={<AlbemHome/>}/>
                 <Route path="/temp" element={<Temp/>}/>

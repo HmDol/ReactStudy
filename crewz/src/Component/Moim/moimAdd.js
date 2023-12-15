@@ -20,9 +20,10 @@ function Example() {
     return (
         <>
 
-            <Button onClick={() => setLgShow(true)}>Large modal</Button>
+            <Button size="lg"onClick={() => setLgShow(true)}>모임 생성 버튼</Button>
 
-            <Modal
+            <Modal 
+                style={{fontSize : '20px'}}
                 size="lg"
                 show={lgShow}
                 onHide={() => setLgShow(false)}
@@ -33,19 +34,18 @@ function Example() {
                         Large Modal
                     </Modal.Title>
                 </Modal.Header>
-                <Modal.Body className="text-center">
+                <Modal.Body className="text-center" style={{padding: '50px'}}>
                     <Form.Group controlId="catno">
-                        <Form.Label className="fw-bold">어떤 모임인가요?</Form.Label>
+                        <Form.Label className="fw-bold">어떤 모임인가요?</Form.Label><br/>
                         <br />
                         <Row>
                             <Col>
-                                <Form.Check
-                                    type="radio"
+                                <Form.Check type="radio"
                                     name="catno"
                                     value="1"
                                     id="exercise_select"
                                     label="운동"
-                                    variant="outline-danger"
+                                    
                                 /></Col>
                             <Col>
                                 <Form.Check
@@ -54,7 +54,7 @@ function Example() {
                                     value="2"
                                     id="reading_select"
                                     label="독서"
-                                    variant="outline-danger"
+                                    
                                 /></Col>
                             <Col>
                                 <Form.Check
@@ -63,7 +63,7 @@ function Example() {
                                     value="3"
                                     id="trip-select"
                                     label="여행"
-                                    variant="outline-danger"
+                                    
                                 /></Col>
                             <Col>
                                 <Form.Check
@@ -72,10 +72,11 @@ function Example() {
                                     value="4"
                                     id="other-select"
                                     label="기타"
-                                    variant="outline-danger"
+                                    
                                 /></Col>
                         </Row>
-                    </Form.Group>
+                    </Form.Group><br/><br/>
+
                     {/* <Row>
                     <ButtonGroup>
                         {radios.map((radio, idx) => (
@@ -101,25 +102,25 @@ function Example() {
                     <Form.Group controlId="moimtitle">
                         <Form.Label className="fw-bold">모임 이름을 적어주세요</Form.Label>
                         <Form.Control type="text" placeholder="ex) Root Trip!" />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                     <Form.Group controlId="moiminfo">
                         <Form.Label className="fw-bold">저희 모임은 이런 모음이에요!</Form.Label>
                         <Form.Control type="text" placeholder="ex)국내여행을 위한 크루!" />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                     <Form.Group controlId="moimcontent">
                         <Form.Label className="fw-bold">하고 싶은 말을 적어주세요!</Form.Label>
                         <Form.Control as="textarea" style={{ height: '200px' }} placeholder="Describe yourself here..." />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                     <Form.Group controlId="formFileSm1">
                         <Form.Label className="fw-bold">모임을 보여주세요!!</Form.Label>
                         <Form.Control type="file" />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                     <Form.Group controlId="formFileSm2">
                         <Form.Control type="file" />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                     <Form.Group controlId="formFileSm3">
                         <Form.Control type="file" />
-                    </Form.Group>
+                    </Form.Group><br/><br/>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setLgShow(false)}>
