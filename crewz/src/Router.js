@@ -12,6 +12,7 @@ import App from "./App";
 import Main from "./Component/main";
 import MyPage from "./Component/member/MyPage";
 import MoimList from "./MoimList";
+import Board from "./Component/Board/Board";
 
 class Router extends Component {
     render() {
@@ -22,6 +23,7 @@ class Router extends Component {
                     <Route path="/moim/home" element={<Home />} />
                     <Route path="/moim/albem" element={<AlbemHome />} />
                     <Route path="/moim/somoim" element={<SomoimHome />} />
+                    <Route path="/moim/board" element={<Board/>}/>
                     <Route path="/moim/review/ReviewTest" element={<ReviewTest />} />
                     <Route path="/moim/review/ReviewAddModal" element={<ReviewAddModal />} />
                     <Route path="/moim/review/ReviewEditModal" element={<ReviewEditModal />} />
