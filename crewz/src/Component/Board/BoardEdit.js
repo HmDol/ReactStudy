@@ -3,14 +3,15 @@ import { Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export default function BoardAdd() {
+export default function BoardEdit() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     return (
         <>
-            <Button variant="danger" onClick={handleShow} style={{margin:'20px', fontSize:'100%',float : 'right'}}>글작성</Button>
+        
+            <span onClick={handleShow} style={{cursor:'pointer'}}>글 수정</span>
             <Modal
                 show={show}
                 onHide={handleClose}
@@ -18,7 +19,7 @@ export default function BoardAdd() {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>게시글 추가하기</Modal.Title>
+                    <Modal.Title>게시글 수정하기</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <span className='fw-bold'>제목</span><br/>
@@ -35,7 +36,7 @@ export default function BoardAdd() {
                     <Button variant="secondary" onClick={handleClose}>
                         닫기
                     </Button>
-                    <Button variant="primary">추가</Button>
+                    <Button variant="primary">수정하기 </Button>
                 </Modal.Footer>
             </Modal>
         </>
